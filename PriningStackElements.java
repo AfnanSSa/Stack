@@ -15,9 +15,10 @@ public class StackTask {
             myStack.push(i);
         }
 
-        //printing elements
-        for (Integer element : myStack){
-            System.out.println(element);
+        // Printing elements of the stack without modifying it
+        System.out.println("Stack elements from top to bottom:");
+        for (Integer i = myStack.size() - 1; i >= 0; i--) {
+            System.out.println(myStack.get(i));
         }
     }
 }
