@@ -1,0 +1,23 @@
+/* PUSH ELEMENTS TO A STACK
+• Problem Statement: Write a function to add (or "push") three integers
+  to a stack that you initialized. Print the stack contents after each push.
+• Objective: Understand how elements are added to a stack.*/
+
+import java.util.Stack;
+
+public class StackTask {
+    public static void main(String[] args){
+        //initializing empty stack
+        Stack<Integer> myStack = new Stack<>();
+
+        //adding 3 elements to the stack
+        for(Integer i=0; i<=2; i++){
+            myStack.push(i);
+            //printing each element after pushing 
+            System.out.println("\n" + i + " is added to the stack");
+        }
+
+        // Printing elements of the stack without modifying it
+        System.out.println("\nStack elements: " + myStack.toString());
+    }
+}
