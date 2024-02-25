@@ -27,12 +27,16 @@ public class StackTask {
         }
 
         //attempting to clear an already empty stack
-        if (!myStack.isEmpty()) {
-            myStack.clear();
-            System.out.println("\nStack has been cleared successfully"); //prompting user
+        clearStack(myStack);
+
+    }
+
+    private static void clearStack(Stack<Integer> stack) {
+        if (!stack.isEmpty()) {
+            stack.clear();
+            System.out.println("\nStack has been cleared successfully");
         } else {
             System.out.println("\nStack is already empty. Nothing to clear.");
         }
-
     }
 }
